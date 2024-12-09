@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 0.01f, LayerMask.GetMask("Platform"));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 0.01f, LayerMask.GetMask("Standable"));
         
         if (rayHit.collider != null) {
             canJump = true;
