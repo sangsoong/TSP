@@ -2004,6 +2004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePower: 5
   jumpPower: 7
+  attackStiffTime: 0.5
 --- !u!50 &632736829
 Rigidbody2D:
   serializedVersion: 5
