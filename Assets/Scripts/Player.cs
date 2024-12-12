@@ -2,6 +2,9 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor.PackageManager;
 using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.NCalc;
 
 public class Player : MonoBehaviour
 {
@@ -34,22 +37,23 @@ public class Player : MonoBehaviour
     KeyCode runDoubleClickKey;
     private bool runDoubleClickChecking = false;
     private float runDoubleClickTime = 0f;
-    private float runDoubleClickTimeLimit = 0.2f;
+    private float runDoubleClickTimeLimit = 0.15f;
 
     // Crouch
     bool canCrouch = true;
     bool isCrouching = false;
 
     // Attack
-    private float currentAttackStiff;
-    public float attackStiffTime = 1f;
-    bool isAttacked = false;
+    private float currAtkStiff = 0f;
+    bool canAttackStart = true;
     bool isAttacking = false;
-    String currCombo = "";
+    List<String> atkList = new List<String>{"u", "i", "j", "k"};
+    Queue<String> comboInput = new Queue<string>();
     private bool comboChecking = false;
     private float comboCheckTime = 0f;
     private float comboCheckTimeLimit = 0.3f;
-
+    String currCombo = "";
+    Queue<String> atkAnimQueue = new Queue<String>();
 
     void Start()
     {
@@ -96,7 +100,6 @@ public class Player : MonoBehaviour
             isCrouching = false;
 
         // run
-        Debug.Log(isRunning);
         if (isFlying || isAttacking || isRunning || isCrouching)
             canRun = false;
         else
@@ -114,12 +117,14 @@ public class Player : MonoBehaviour
             runDoubleClickChecking = false;
             runDoubleClickTime = 0;
         }
+
         if ((isRunning && runDoubleClickKey == KeyCode.A && Input.GetKeyUp(KeyCode.A))
             || (isRunning && runDoubleClickKey == KeyCode.D && Input.GetKeyUp(KeyCode.D))
             || (isRunning && runDoubleClickKey == KeyCode.A && Input.GetKeyDown(KeyCode.D))
             || (isRunning && runDoubleClickKey == KeyCode.D && Input.GetKeyDown(KeyCode.A)))  // 달리기 해제
             isRunning = false;
-        if (canRun && !runDoubleClickChecking) { // 달릴수 있을때 더블클릭 체크 시작
+
+        if (canRun && !runDoubleClickChecking) { // 더블클릭 체크 시작
             if (Input.GetKeyDown(KeyCode.A)){
                 runDoubleClickChecking = true;
                 runDoubleClickKey = KeyCode.A;
@@ -129,9 +134,11 @@ public class Player : MonoBehaviour
                 runDoubleClickKey = KeyCode.D;
             }
         }
+
         if (runDoubleClickChecking && (runDoubleClickTime <= runDoubleClickTimeLimit)){   // 더블클릭 시간 증가
             runDoubleClickTime += Time.deltaTime;
         }
+
         if (runDoubleClickTime > runDoubleClickTimeLimit) { // 더블클릭 제한시간 체크, 초기화
             runDoubleClickChecking = false;
             runDoubleClickTime = 0;
@@ -147,18 +154,35 @@ public class Player : MonoBehaviour
             isJumped = true;
         
         // Attack
-        if (currentAttackStiff <= 0) {
-            currentAttackStiff = 0;
-            isAttacking = false;
-            if (Input.GetKeyDown(KeyCode.U)) {
-                isAttacked = true;
-                animator.SetBool("isAttacking", true);
-                currentAttackStiff += attackStiffTime;
-            }
-        }
-        else if (currentAttackStiff > 0) {
-            currentAttackStiff -= Time.deltaTime;
+        if (isAttacking)
+            canAttackStart = false;
+        else
+            canAttackStart = true;
+
+        if (canAttackStart && atkList.Contains(Input.inputString)){ // 콤보체크 시작
             isAttacking = true;
+            canAttackStart = false;
+            comboChecking = true;
+        }
+        
+        if (comboChecking && atkList.Contains(Input.inputString))   // 콤보 입력
+            comboInput.Enqueue(" " + Input.inputString);
+
+        if (comboChecking && (comboCheckTime <= comboCheckTimeLimit))   // 콤보체크 시간 증가
+            comboCheckTime += Time.deltaTime;
+        if (comboCheckTime > comboCheckTimeLimit) {    // 콤보체크 제한시간 체크, 초기화
+            comboChecking = false;
+            comboCheckTime = 0;
+            currCombo = "";
+        }
+
+        if (currAtkStiff > 0) { // 경직시간 감소
+            currAtkStiff -= Time.deltaTime;
+            isAttacking = true;
+        }
+        else if (currAtkStiff < 0) {
+            currAtkStiff = 0;
+            isAttacking = false;
         }
 
     }
@@ -170,7 +194,7 @@ public class Player : MonoBehaviour
         Crouch();
         Run();
         Jump();
-        Attack();
+        Combo();
 
     }
 
@@ -271,13 +295,69 @@ public class Player : MonoBehaviour
 
     }
 
-    void Attack()
+    void Combo()
     {
 
-        if (!isAttacked)
+        if (comboInput.Count == 0)
             return;
+
+        currCombo += comboInput.Dequeue();  // 현재 콤보에 입력된 공격 추가
         
-        isAttacked = false;
+        // 콤보 확인
+        if (currCombo.Equals(" i")) {
+            atkAnimQueue.Enqueue("RP");
+            StartCoroutine(atkAnimation());
+            comboCheckTimeLimit = 0.2f;
+            comboCheckTime = 0f;
+            Attack("RP");
+        }
+        else if (currCombo.Equals(" i i")) {
+            atkAnimQueue.Enqueue("RP RP");
+            comboCheckTimeLimit = 0.2f;
+            comboCheckTime = 0f;
+            Attack("RP RP");
+        }
+        else if (currCombo.Equals(" i i i")) {
+            atkAnimQueue.Enqueue("RP RP RP");
+            comboCheckTimeLimit = 0.2f;
+            comboCheckTime = 0f;
+            Attack("RP RP RP");
+        }
+        else {  // 콤보 불일치 시 콤보 해제
+            comboChecking = false;
+            comboCheckTimeLimit = 1f;
+            comboCheckTime = 0f;
+            currCombo = "";
+        }
+
+
+    }
+
+    IEnumerator atkAnimation()
+    {
+
+        while(atkAnimQueue.Count != 0) {
+            animator.SetTrigger(atkAnimQueue.Dequeue());
+            yield return new WaitForSeconds(0.01f);
+            float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
+            currAtkStiff += animLength - 0.01f;
+            yield return new WaitForSeconds(animLength - 0.02f);
+        }
+
+    }
+
+    void Attack(String combo)
+    {
+
+        if (combo.Equals("RP")) {
+            //Debug.Log("RP");
+        }
+        else if (combo.Equals("RP RP")) {
+            //Debug.Log("RP RP");
+        }
+        else if (combo.Equals("RP RP RP")) {
+            //Debug.Log("RP RP RP");
+        }
 
     }
 }

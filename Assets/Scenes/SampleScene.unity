@@ -12627,7 +12627,7 @@ GameObject:
   - component: {fileID: 632736830}
   - component: {fileID: 632736829}
   - component: {fileID: 632736828}
-  - component: {fileID: 632736833}
+  - component: {fileID: 632736834}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -12651,7 +12651,6 @@ MonoBehaviour:
   jumpPower: 15
   runCoeff: 2
   crouchCoeff: 0.5
-  attackStiffTime: 0.5
 --- !u!50 &632736829
 Rigidbody2D:
   serializedVersion: 5
@@ -12795,7 +12794,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2080159531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &632736833
+--- !u!95 &632736834
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
