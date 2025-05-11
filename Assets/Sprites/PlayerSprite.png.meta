@@ -221,12 +221,12 @@ TextureImporter:
       name: PlayerSprite_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 101
-        width: 9
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        x: 1
+        y: 430
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: PlayerSprite_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 101
-        width: 9
-        height: 16
+        x: 40
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: PlayerSprite_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 101
-        width: 9
-        height: 16
+        x: 79
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: PlayerSprite_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 101
-        width: 9
-        height: 16
+        x: 118
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: PlayerSprite_4
       rect:
         serializedVersion: 2
-        x: 54
-        y: 101
-        width: 9
-        height: 16
+        x: 157
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: PlayerSprite_5
       rect:
         serializedVersion: 2
-        x: 69
-        y: 101
-        width: 9
-        height: 16
+        x: 196
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,12 +353,12 @@ TextureImporter:
       name: PlayerSprite_6
       rect:
         serializedVersion: 2
-        x: 85
-        y: 101
-        width: 9
-        height: 16
+        x: 235
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,12 +375,12 @@ TextureImporter:
       name: PlayerSprite_7
       rect:
         serializedVersion: 2
-        x: 97
-        y: 101
-        width: 9
-        height: 16
+        x: 274
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -397,12 +397,12 @@ TextureImporter:
       name: PlayerSprite_8
       rect:
         serializedVersion: 2
-        x: 109
-        y: 101
-        width: 9
-        height: 16
+        x: 313
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: PlayerSprite_9
       rect:
         serializedVersion: 2
-        x: 121
-        y: 101
-        width: 9
-        height: 16
+        x: 352
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -441,12 +441,12 @@ TextureImporter:
       name: PlayerSprite_10
       rect:
         serializedVersion: 2
-        x: 133
-        y: 101
-        width: 9
-        height: 16
+        x: 391
+        y: 430
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: PlayerSprite_11
       rect:
         serializedVersion: 2
-        x: 148
-        y: 101
-        width: 10
-        height: 16
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+        x: 1
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -485,12 +485,12 @@ TextureImporter:
       name: PlayerSprite_12
       rect:
         serializedVersion: 2
-        x: 162
-        y: 101
-        width: 8
-        height: 16
-      alignment: 9
-      pivot: {x: 0.44, y: 0.5}
+        x: 40
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -507,12 +507,12 @@ TextureImporter:
       name: PlayerSprite_13
       rect:
         serializedVersion: 2
-        x: 173
-        y: 101
-        width: 12
-        height: 16
-      alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+        x: 79
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -529,12 +529,12 @@ TextureImporter:
       name: PlayerSprite_14
       rect:
         serializedVersion: 2
-        x: 187
-        y: 101
-        width: 11
-        height: 16
-      alignment: 9
-      pivot: {x: 0.41, y: 0.5}
+        x: 118
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: PlayerSprite_15
       rect:
         serializedVersion: 2
-        x: 201
-        y: 101
-        width: 12
-        height: 16
-      alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+        x: 157
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -573,12 +573,12 @@ TextureImporter:
       name: PlayerSprite_16
       rect:
         serializedVersion: 2
-        x: 217
-        y: 101
-        width: 8
-        height: 16
-      alignment: 9
-      pivot: {x: 0.435, y: 0.5}
+        x: 196
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -595,12 +595,12 @@ TextureImporter:
       name: PlayerSprite_17
       rect:
         serializedVersion: 2
-        x: 231
-        y: 101
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.65, y: 0.435}
+        x: 235
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -617,12 +617,12 @@ TextureImporter:
       name: PlayerSprite_18
       rect:
         serializedVersion: 2
-        x: 244
-        y: 101
-        width: 11
-        height: 16
-      alignment: 9
-      pivot: {x: 0.685, y: 0.435}
+        x: 274
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -639,12 +639,12 @@ TextureImporter:
       name: PlayerSprite_19
       rect:
         serializedVersion: 2
-        x: 258
-        y: 101
-        width: 10
-        height: 16
-      alignment: 9
-      pivot: {x: 0.65, y: 0.435}
+        x: 313
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -661,12 +661,12 @@ TextureImporter:
       name: PlayerSprite_20
       rect:
         serializedVersion: 2
-        x: 271
-        y: 101
-        width: 11
-        height: 16
-      alignment: 9
-      pivot: {x: 0.68, y: 0.435}
+        x: 352
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -683,12 +683,12 @@ TextureImporter:
       name: PlayerSprite_21
       rect:
         serializedVersion: 2
-        x: 285
-        y: 101
-        width: 8
-        height: 16
-      alignment: 9
-      pivot: {x: 0.44, y: 0.435}
+        x: 391
+        y: 391
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -705,12 +705,12 @@ TextureImporter:
       name: PlayerSprite_22
       rect:
         serializedVersion: 2
-        x: 3
-        y: 74
-        width: 13
-        height: 16
-      alignment: 9
-      pivot: {x: 0.735, y: 0.5}
+        x: 1
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -727,12 +727,12 @@ TextureImporter:
       name: PlayerSprite_23
       rect:
         serializedVersion: 2
-        x: 19
-        y: 74
-        width: 26
-        height: 16
-      alignment: 9
-      pivot: {x: 0.33, y: 0.5}
+        x: 40
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -749,12 +749,12 @@ TextureImporter:
       name: PlayerSprite_24
       rect:
         serializedVersion: 2
-        x: 48
-        y: 74
-        width: 12
-        height: 16
-      alignment: 9
-      pivot: {x: 0.53, y: 0.5}
+        x: 79
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -771,12 +771,12 @@ TextureImporter:
       name: PlayerSprite_25
       rect:
         serializedVersion: 2
-        x: 66
-        y: 74
-        width: 14
-        height: 16
-      alignment: 9
-      pivot: {x: 0.61, y: 0.5}
+        x: 118
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -793,12 +793,12 @@ TextureImporter:
       name: PlayerSprite_26
       rect:
         serializedVersion: 2
-        x: 83
-        y: 74
-        width: 26
-        height: 16
-      alignment: 9
-      pivot: {x: 0.33, y: 0.5}
+        x: 157
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -815,12 +815,12 @@ TextureImporter:
       name: PlayerSprite_27
       rect:
         serializedVersion: 2
-        x: 112
-        y: 74
-        width: 13
-        height: 16
-      alignment: 9
-      pivot: {x: 0.73, y: 0.5}
+        x: 196
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -837,12 +837,12 @@ TextureImporter:
       name: PlayerSprite_28
       rect:
         serializedVersion: 2
-        x: 131
-        y: 74
-        width: 13
-        height: 16
-      alignment: 9
-      pivot: {x: 0.73, y: 0.5}
+        x: 235
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -859,12 +859,12 @@ TextureImporter:
       name: PlayerSprite_29
       rect:
         serializedVersion: 2
-        x: 147
-        y: 74
-        width: 15
-        height: 24
-      alignment: 9
-      pivot: {x: 0.37, y: 0.333}
+        x: 274
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -881,12 +881,12 @@ TextureImporter:
       name: PlayerSprite_30
       rect:
         serializedVersion: 2
-        x: 165
-        y: 74
-        width: 7
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 0.333}
+        x: 313
+        y: 352
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -903,12 +903,12 @@ TextureImporter:
       name: PlayerSprite_31
       rect:
         serializedVersion: 2
-        x: 3
-        y: 46
-        width: 13
-        height: 17
+        x: 1
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -925,12 +925,12 @@ TextureImporter:
       name: PlayerSprite_32
       rect:
         serializedVersion: 2
-        x: 19
-        y: 46
-        width: 15
-        height: 25
+        x: 40
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -947,12 +947,12 @@ TextureImporter:
       name: PlayerSprite_33
       rect:
         serializedVersion: 2
-        x: 37
-        y: 46
-        width: 7
-        height: 25
+        x: 79
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -969,12 +969,12 @@ TextureImporter:
       name: PlayerSprite_34
       rect:
         serializedVersion: 2
-        x: 50
-        y: 46
-        width: 11
-        height: 17
+        x: 118
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -991,12 +991,12 @@ TextureImporter:
       name: PlayerSprite_35
       rect:
         serializedVersion: 2
-        x: 64
-        y: 46
-        width: 12
-        height: 17
+        x: 157
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1013,12 +1013,12 @@ TextureImporter:
       name: PlayerSprite_36
       rect:
         serializedVersion: 2
-        x: 79
-        y: 37
-        width: 13
-        height: 26
+        x: 196
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1035,12 +1035,12 @@ TextureImporter:
       name: PlayerSprite_37
       rect:
         serializedVersion: 2
-        x: 95
-        y: 39
-        width: 8
-        height: 24
+        x: 235
+        y: 313
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1057,12 +1057,12 @@ TextureImporter:
       name: PlayerSprite_38
       rect:
         serializedVersion: 2
-        x: 109
-        y: 46
-        width: 13
-        height: 17
+        x: 1
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1079,12 +1079,12 @@ TextureImporter:
       name: PlayerSprite_39
       rect:
         serializedVersion: 2
-        x: 126
-        y: 46
-        width: 26
-        height: 17
+        x: 40
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1101,12 +1101,12 @@ TextureImporter:
       name: PlayerSprite_40
       rect:
         serializedVersion: 2
-        x: 155
-        y: 46
-        width: 14
-        height: 17
+        x: 79
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1123,12 +1123,12 @@ TextureImporter:
       name: PlayerSprite_41
       rect:
         serializedVersion: 2
-        x: 3
-        y: 10
-        width: 13
-        height: 16
+        x: 118
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1145,12 +1145,12 @@ TextureImporter:
       name: PlayerSprite_42
       rect:
         serializedVersion: 2
-        x: 19
-        y: 10
-        width: 26
-        height: 16
+        x: 157
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1167,12 +1167,12 @@ TextureImporter:
       name: PlayerSprite_43
       rect:
         serializedVersion: 2
-        x: 48
-        y: 10
-        width: 14
-        height: 16
+        x: 196
+        y: 274
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1181,72 +1181,6 @@ TextureImporter:
       bones: []
       spriteID: a92e591c4ec28c841a12fe083e9a4c60
       internalID: 1082030064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSprite_44
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 10
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f77235a1263d0f43b294505dd6ba2d8
-      internalID: 1279395072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSprite_45
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 10
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bebe9c2b6545ea04b8dea2c8a8fb55bc
-      internalID: 727404700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSprite_46
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 10
-        width: 7
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 467f9c7809d8d4245be36a5f0d5a5252
-      internalID: -800807075
       vertices: []
       indices: 
       edges: []
@@ -1304,9 +1238,6 @@ TextureImporter:
       PlayerSprite_41: 1382065065
       PlayerSprite_42: 1251586645
       PlayerSprite_43: 1082030064
-      PlayerSprite_44: 1279395072
-      PlayerSprite_45: 727404700
-      PlayerSprite_46: -800807075
       PlayerSprite_5: -8434965753784240484
       PlayerSprite_6: -3958506783679606655
       PlayerSprite_7: -5367375639046076343
